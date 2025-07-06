@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Overflow Examples</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #333;
+      background-color: #f0f0f0;
+    }
+    .auto { overflow: auto; }
+    .hidden { overflow: hidden; }
+    .visible { overflow: visible; }
+    .scroll { overflow: scroll; }
+  </style>
+</head>
+<body>
+
+  <h2>Overflow: auto</h2>
+  <div class="box auto">
+    This is some content that is too long for the box and will trigger auto scrolling. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>Overflow: hidden</h2>
+  <div class="box hidden">
+    This is some content that is too long for the box and will be cut off. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>Overflow: visible</h2>
+  <div class="box visible">
+    This is some content that is too long for the box and will overflow visibly. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>Overflow: scroll</h2>
+  <div class="box scroll">
+    <img src="images/rank.png" class="card-img-top" alt="Activity 2" style="object-fit: cover; width: 100%; height: auto;">
+
+    <!-- This is some content that is too long for the box and will always show scrollbars. Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google SignUp Form</title>
+    <link rel="stylesheet" href="storyForm.css">
+</head>
+<body>
+    <h1>Submit Your Application</h1>
+
+    <form action="FormProcessor2.html" method="get">
+        <fieldset id = "particular">
+            <legend><strong>Personal Particulars</strong></legend>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="bdate" required>
+
+            <label>Gender:</label>
+            
+            <div class="gender-option">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </div>
+
+
+            <!-- <label for="diploma">Diploma:</label>
+            <select id="diploma" name="diploma" required>
+                <option value="">--Select Diploma--</option>
+                <option value="it">Information Technology</option>
+                <option value="business">Business</option>
+                <option value="engineering">Engineering</option>
+                <option value="design">Design</option>
+            </select> -->
+
+            <label for="diploma">Diploma:</label>
+            <select id="diploma">
+                <option value="">--Select Diploma--</option>
+                <option value="it">Information Technology</option>
+                <option value="business">Business</option>
+                <option value="engineering">Engineering</option>
+                <option value="design">Design</option>
+            </select><br><br>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="title">Story Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="story">Your Story:</label>
+            <textarea id="story" name="story" rows="10" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset id="preference">
+            <legend><strong>Preference</strong></legend>
+            <label for="age">Most preferred age:</label>
+            <textarea id="age" name="age" rows="1" cols="10" required></textarea><br><br>
+
+            <label for="favorite-color" style="display: inline-block; width: 150px;">Select your favorite color:</label>
+            <input type="color" id="favorite-color" name="favorite-color" style="margin-top: 10px;"><br><br>
+
+            <label for="preferred_activity">Preferred Activity:</label>
+            <select id="preferred_activity" name="activity" required>
+                <option value="">--Select Preferred Activity--</option>
+                <option value="swimming">Swimming</option>
+                <option value="badminton">Badminton</option>
+                <option value="cycling">Cycling</option>
+                <option value="tennis">Tennis</option>
+            </select><br><br>
+
+            <label for="website">Favourite Website:</label>
+            <input type="text" id="website" name="website" required><br><br>
+
+            <label for="location">Favourite Holiday Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </form>
+
+</body>
+</html>

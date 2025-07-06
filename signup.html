@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google SignUp Form</title>
+</head>
+<body>
+
+    <!-- Bootstrap 5 CDN in <head> -->
+        <form class="container mt-5" id="signupForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+              
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">School Level</label>
+              <select class="form-select" required>
+                <option selected disabled>Choose...</option>
+                <option>Secondary 1</option>
+                <option>Secondary 2</option>
+                <option>Secondary 3</option>
+                <option>Secondary 4</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+          <script src="index.js"></script>
+
+</body>
+</html>
